@@ -19,7 +19,6 @@ void PRINT();
 int maxHeap(int* array);
 void HEAP(int* modify, int* heap, int size);
 
-
 int main() {
   bool running = true;
   char command[10];
@@ -65,7 +64,7 @@ int main() {
 	    cout << modify[i] << " ";
 	  }
 	  cout << endl;
-	} 
+	}
       }
       else if (strcmp(command, "MANUAL") == 0 || strcmp(command, "Manual") == 0) { //Manual command, for user manual input
 	cout << "Enter each number followed by a space:" << endl;
