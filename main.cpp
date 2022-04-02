@@ -14,6 +14,7 @@ Other Resources Used:
 #include <iostream>
 #include <cstring>
 #include <fstream>
+#include <vector>
 
 using namespace std;
 
@@ -33,6 +34,7 @@ int main() {
         modify[i] = 0; //Clear array
     }
     int count = 0; //Number of chars
+    vector<int> numbers;
 
     cout << "Welcome to Heap" << endl;
     while (running == true) {
@@ -159,7 +161,7 @@ void PARSE(char* in, int* modify, int& count) { //Parse function, takes in manua
 }
 
 void HEAP(int* modify, int* heap, int size) { //Heap function, builds tree
-    int current = 1; 
+    int current = 1;
     //Set index at 1 to largest int
     heap[1] = modify[maxHeap(modify)]; //Largest set at index 1
     modify[maxHeap(modify)] = 0;
