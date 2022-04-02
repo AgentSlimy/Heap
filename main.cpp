@@ -14,7 +14,6 @@ Other Resources Used:
 #include <iostream>
 #include <cstring>
 #include <fstream>
-#include <vector>
 
 using namespace std;
 
@@ -34,7 +33,6 @@ int main() {
         modify[i] = 0; //Clear array
     }
     int count = 0; //Number of chars
-    vector<int> numbers;
 
     cout << "Welcome to Heap" << endl;
     while (running == true) {
